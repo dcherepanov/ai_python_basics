@@ -5,7 +5,7 @@ __author__ = 'Черепанов Дмитрий Евгеньевич'
 Для решения используйте цикл while и арифметические операции.'''
 
 int_number = int(input('Integer: '))
-max_number, i = 0, 0
+max_number = 0
 while int_number > 0:
     last = int_number % 10
     int_number = int_number // 10
