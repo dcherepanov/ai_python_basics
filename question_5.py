@@ -11,10 +11,10 @@ __author__ = 'Черепанов Дмитрий Евгеньевич'
 revenue = float(input('Revenue: '))
 cost = float(input('Cost: '))
 if revenue >= cost:
-    profit = (revenue - cost) / revenue
-    print(f'Profit: {profit}')
+    profitability = (revenue - cost) / revenue
+    print(f'Profitability: {profitability}')
     number_of_employees = int(input('Number of employees: '))
-    profit_on_employee = profit / number_of_employees
+    profit_on_employee = (revenue - cost) / number_of_employees
     print(f'Profit on employee: {profit_on_employee}')
 else:
     print('Loss')
