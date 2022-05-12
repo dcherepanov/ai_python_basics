@@ -6,11 +6,13 @@ __author__ = 'Черепанов Дмитрий Евгеньевич'
 
 str_number = input('Integer: ')
 max_number_while, i = 0, 0
+int_number = int(str_number)
 # while
-while i < len(str_number):
-    if max_number_while < int(str_number[i]):
-        max_number_while = int(str_number[i])
-    i += 1
+while int_number > 0:
+    last = int_number % 10
+    int_number = int_number // 10
+    if max_number_while < last:
+        max_number_while = last
 print(f'Max number: {max_number_while}')
 max_number_for = 0
 # for
