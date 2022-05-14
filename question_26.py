@@ -33,6 +33,7 @@ new_dict = {}
 for key in init_list[0][1].keys():
     temp_list = []
     for item in init_list:
-        temp_list.append(item[1][key])
+        if item[1][key] not in temp_list:
+            temp_list.append(item[1][key])
     new_dict.update({key: temp_list})
 print(new_dict)
