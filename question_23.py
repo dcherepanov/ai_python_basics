@@ -6,8 +6,10 @@ __author__ = 'Черепанов Дмитрий Евгеньевич'
 
 #через list:
 seasons_list = ['зима', 'весна', 'лето', 'осень']
-int_number = int(input('Month number: '))
-print(seasons_list[int_number % 12 // 3])
+month_number = int(input('Month number: '))
+print(seasons_list[month_number % 12 // 3])
 #через dict:
-seasons_dict = {1:'зима', 2:'весна', 3:'лето', 4:'осень'}
-print(seasons_dict[int_number % 12 // 3 + 1])
+seasons_dict = {'зима': [12, 1, 2], 'весна': [3, 4, 5], 'лето': [6, 7, 8], 'осень': [9, 10, 11]}
+for key_ in seasons_dict:
+    if month_number in seasons_dict[key_]:
+        print(key_)
