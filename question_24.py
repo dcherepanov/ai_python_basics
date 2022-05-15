@@ -7,6 +7,6 @@ __author__ = 'Черепанов Дмитрий Евгеньевич'
 
 words = input('Words: ')
 words_list = words.split(' ')
-for i, item in enumerate(words_list):
+for i, item in enumerate(words_list, 1):
     print(i, item[:10])
     

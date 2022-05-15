@@ -6,7 +6,7 @@ __author__ = 'Черепанов Дмитрий Евгеньевич'
 сохранить на своём месте. Для заполнения списка элементов нужно использовать функцию
 input().'''
 
-list_ = [1, 2, 3, 4, 'a', 'b', 'first', 'second', 'y']
+list_ = input('List of elements with spaces: ').split(' ')
 for i, item in enumerate(list_):
     if i + 1 < len(list_) and i % 2 == 0:
         list_[i], list_[i + 1] = list_[i + 1], list_[i]
