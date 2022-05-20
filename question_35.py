@@ -9,13 +9,21 @@ Enter должна выводиться сумма чисел. Пользова�
 Если специальный символ введён после нескольких чисел, то вначале нужно добавить сумму
 этих чисел к полученной ранее сумме и после этого завершить программу.'''
 
+
+def str_to_number(str_): 
+    try:
+        return float(str_)
+    except ValueError:
+        return 0
+    
+        
 sum_ = 0
-while True:
-    str_numbers_list = input('Enter numbers: ').split(' ')
-    for str_number in str_numbers_list:
-        try:
-            number = float(str_number)
-        except ValueError:
-            print(f'Str in numbers list, sum = {sum_}')
-            exit()
-        sum_ += number
+exit_ = False
+while not exit_:
+    str_list = input('Enter numbers (or "q" to exit): ').split(' ')
+    for str_item in str_list:
+        if str_item == 'q':
+            exit_ = True
+            break
+        sum_ += str_to_number(str_item)
+    print(f'Sum = {sum_}')

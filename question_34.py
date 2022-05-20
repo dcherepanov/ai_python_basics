@@ -11,11 +11,12 @@ my_func(x, y). При решении задания нужно обойтись 
 
 
 def my_func(x, y):
-    result, i = x, 1
-    while i < y:
+    result, i = 1., 0
+    while i < -y:
         result *= x
         i += 1
-    return result
+    return 1 / result
 
-a, b = 34.1, 7
+
+a, b = 34.1, -3
 print(f'Первый способ: {a**b}, Второй способ: {my_func(a, b)}')

@@ -7,12 +7,10 @@ __author__ = 'Черепанов Дмитрий Евгеньевич'
 
 
 def divide(dividend, divider):
-    result = None
     try:
-        result = dividend / divider
+        return dividend / divider
     except ZeroDivisionError:
         print('Zero division error')
-    return result
 
 
 dividend = float(input('Dividend: '))
