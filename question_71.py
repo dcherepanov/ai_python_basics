@@ -28,7 +28,6 @@ class Matrix:
         self.__shape = len(data), n_columns
         
 
-
     def __str__(self):
         return '\n'.join(['|' + '\t'.join(map(str, line)) + '|' for line in self.__data])
 

@@ -40,7 +40,6 @@ class Suit(AbstractClothes):
         return self.height * 2 + 0.3
         
 
-
 if __name__ == '__main__':
     type_1 = Coat(52)
     type_2 = Suit(180)
